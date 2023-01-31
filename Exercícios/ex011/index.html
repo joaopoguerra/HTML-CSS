@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <audio preload="metadata" controls>
+        <source src="guanacast-33.mp3" type="audio/mpeg">
+        <source src="guanacast-33.ogg" type="audio/ogg">
+        <source src="guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não consegue reproduzir Áudio. <a href="guanacast-33.mp3" download="guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <audio controls>
+        <source src="happy-mistake.mp3" type="audio/mpeg">
+        <source src="happy-mistake.ogg" type="audio/ogg">
+        <source src="happy-mistake.wav" type="audio/wav">
+    </audio>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

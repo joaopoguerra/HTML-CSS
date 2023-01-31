@@ -1,0 +1,501 @@
+Referências On-line:
+
+- Referência MDN
+- W3C Standards
+- WHATWG Living Standard
+- W3Schools
+
+Para buscar tags:
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+
+Para buscar símbolos:
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+
+Para buscar emojis:
+https://emojipedia.org/
+
+HTML - Linguagem focada em conteúdo
+CSS - Focada em estilo
+Js - Focada em interatividade
+
+Estrutura básica de documento HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+
+
+meta charset="URF-8" = Para desenvolver sites em português. Serve para adicionar acentuação, ç e outros.
+
+meta name="viewport"
+content="width=device-width,
+initial-scale=1.0"
+
+Para afirmar que o site vai ocupar toda parte "branca" do site.. E vai começar com o zoom em 100%.
+
+<title> = Para definir o título do site
+
+<h1> = Título de nível 1
+<hr> = Criar uma linha, não precisa fechar
+<p> = Criar um parágrafo
+<br> = Quebrar linha
+&lt; = <
+&gt; = >
+
+Para inserir emoji:
+&#x + Codepoint
+
+Site para encontrar emoji:
+https://emojipedia.org/
+
+Para inserir comentário:
+<!--COMENTÁRIO-->
+
+Sites com imagens em domínio público:
+-UnSplash
+-Pexels
+-FreePik
+-Rawpixel
+-Pixabay
+-Libreshot
+-Wikimedia Commons
+
+Para inserir imagem:
+<img src="LOCALDAIMAGEM" alt="TEXTO ALTERNATIVO"
+
+Obs: Importante colocar um bom texto alternativo, ele ajuda a rankiar melhor o seu site
+
+Para colocar ícone ao lado do título da página, lá nas abas:
+Site: IconArchive
+
+Para desenhar um: Favicon.cc
+
+Para submeter uma imagem e transformar: Favicon.io
+
+Arquivo .ico
+
+Para colocar no código:
+Digite na parte <head>, em uma linha em branco, a palavra "link", e logo irá aparecer diversas opções; clique em "link:Favicon". Altere: href="LOCALDOFAVICON.ico"
+
+Formatação de texto:
+
+https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#neste_m%C3%B3dulo
+
+<strong> = Negrito
+<em> = Itálico
+<mark> = Marca texto, pode ser adicionado um estilo em CSS, exemplo: 
+<mark style="">
+<del> = Texto riscado
+<ins> = Sublinhado
+<sup> = Incluir uma letra ou número na parte superior, exemplo: x²
+<sub> = Incluir uma letra ou número na parte inferior, exemplo: H2O
+<pre> = Mantém o texto formatado exatamente como foi digitado no código, com as quebras de linhas e espaçamentos
+<q> = Coloca aspas em uma palavra: "Citação"
+<abbr> = Abreviações: Quando utilizada, podemos colocar o significado dela, apenas ao passar o mouse em cima da palavra.
+<bdo dir="rtl" ou "ltr"> = Colocar o texto invertido com a tag BDO, e colocar a direção, sendo RTL(right to left) ou LTR(Left to Right)
+
+Listas:
+<ol> = Listas ordenadas
+<ul> = Listas não ordenadas
+<li> = Ítem da lista (Fechando opcional)
+
+Listas Ordenadas (Sequência obrigatória):
+Estrutura básica:
+<ol>
+    <li>Ítem 1</li>
+    <li>Ítem 2</li>
+</ol>
+
+Podemos adicionar alguns tipos: "<ol type="">
+"1" : '1, 2, 3, 4, 5...'
+"A" : 'A, B, C, D, E...'
+"a" : 'a, b, c, d, e...'
+"I" : 'I, II, III, IV, V...'
+"i" : 'i, ii, iii, iv, v...'
+
+Podemos adicionar a partir de quanto essa lista começa, exemplo:
+<ol type="1" start=4> -> '4, 5, 6, 7, 8...'
+
+Listas Não Ordenadas (Com marcadores):
+A estrutura básica é igual da ordenada, o que irá mudar é que neste tipo de lista, podemos adicionar marcadores:
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+
+Exemplo:
+<ul type='square'>
+
+Lista de Definições: <dl>
+Funciona como se fosse um dicionário:
+
+<dl> = Lista de Definição
+<dt> = Termo
+<dd> = Definição do Termo
+
+Exemplo:
+<dl>
+    <dt><strong>HTML</strong></dt>
+    <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+
+    <dt><strong>CSS</strong></dt>
+    <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+
+    <dt><strong>JavaScript</strong></dt>
+    <dd>Linguagem de programação para criar interatividades em sites.</dd>
+</dl>
+
+HiperLinks: <a>
+Para adicionar um link:
+<a href="LINKCOMPLETO">TEXTO</a>
+
+Obs: Ao clicar neste link acima, o usuário vai direto para o link, dentro dessa mesma aba.
+
+Para enviar um link para dentro do seu site, exemplo (pagina2.html):
+<a href="pagina2.html" target="_self">TEXTO</a>
+
+Para enviar um link para fora do seu site, abrindo uma nova aba para isso:
+<a href="LINKCOMPLETO" target="_blank">TEXTO</a>
+
+Para identificar que é um link externo ao seu site, utilizamos rel="external":
+<a href="LINKCOMPLETO" target="_blank" rel="external">TEXTO</a>
+
+Para voltar para uma pasta anterior:
+<a href"../ESCOLHER ARQUIVO">
+
+
+Download:
+A função de Download é separado em três pontos:
+-Localização do Arquivo = href
+-Arquivo de Download = download
+-Tipo de Arquivo = type (Abaixo lista com todos os tipos)
+
+Lista de Media Types:
+
+https://www.iana.org/assignments/media-types/media-types.xhtml
+
+Exemplo de código para download:
+<a href="C:\Users\BMW\Documents\Estudos\HTML + CSS\Exercícios\ex010\meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixe aqui o PDF do meu livro</a>
+
+Tag picture:
+Utilizar quando precisar de imagens responsivas, desta forma:
+	<picture>
+	<source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="A imagem flexível funciona">
+	</picture>
+
+Atenção para ordem, pois é necessário fazer em ordem! 
+
+Tag Audio:
+Utilizar quando precisar adicionar um aúdio com ou sem comandos:
+<audio autoplay>
+        <source src="happy-mistake.mp3" type="audio/mpeg">
+
+</audio>
+
+Vídeo Youtube:
+Para colocar vídeo do Youtube, entrar no vídeo que você quer, e clicar em compartilhar -> Incorporar -> Copiar. Depois, só colar no seu código.
+
+CSS:
+Formatação de Texto:
+CSS Externo:
+Faz um arquivo com todas as configurações fora do arquivo principal. Para criar um, ir na <head> e digitar "link:css". Ele irá criar a linha. Após isso, passar com o mouse em cima da palavra "style.css" e clicar "Ctrl+clique", que irá criar um arquivo onde pode ser incluído todas as configurações, como o exemplo abaixo:
+
+@charset "UTF-8";
+/* Regra @charset caso haja algum problema com acentuação */
+
+body {
+    background-color: lightgoldenrodyellow;
+    color: chocolate;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: brown;
+}
+
+a{
+    color: brown;
+    text-decoration: none;
+}
+
+CSS Interno:
+Neste modo, ao invés de criar um novo arquivo, e colocar todas as informações lá, você pode criar na <head>, uma tag <style> e colocar essas mesmas configurações lá.
+
+CSS inline:
+Neste modo, você pode simplesmente abrir as tags <h1>, <h2>, <p>, etc. e colocar a configuração dentro delas.
+
+CSS Externo: Use sempre que puder
+CSS Interno: Use para pequenas configurações
+CSS inline: Procure evitar
+
+OBS: Todas as configurações inline, prevalecem sobre as demais.
+
+OBS: Você pode utilizar mais de um link, se necessário.
+
+Fontes CSS:
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+
+Links CSS:
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links
+
+Cores:
+-Referência: https://rockcontent.com/br/blog/psicologia-das-cores/
+
+https://neilpatel.com/br/blog/psicologia-das-cores-como-usar-cores-para-aumentar-sua-taxa-de-conversao/
+
+-Coolors
+-Adobe Color: https://color.adobe.com/
+-Material Design Color: https://m2.material.io/design/color/the-color-system.html
+
+Função HSL(matiz, saturation, lightness, alpha)
+Exemplo:
+hsl(179, 100%, 34%, 0.757)
+
+OBS: No lightness, para colocar a forma mais viva da cor, utilizar em 50%.
+
+OBS: Valor alpha representa a transparência, sendo de 0(transparente) a 1(opaco)
+
+Gradiente (linear ou Radial):
+background-image: linear-gradient(graus, color1, color2, color3, color...)
+
+background-image: radial-gradient(graus, color1, color2, color3, color...)
+
+Obs: Pode usar quantas cores desejar. Também pode adicionar o quanto quer de cada cor no gradiente, exemplo:
+
+background-image: radial-gradient(ellipse, 30% yellow, 70% blue);
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
+
+Extensão para descobrir cor:
+Colorzilla
+
+Técnica de Harmonização:
+Cores Complementares:
+Apresentam maior contraste
+
+Cores Análogas:
+São vizinhas entre si
+
+Cores análogas mais uma complementar:
+São escolhidas 3 cores análogas, e pela cor do meio, identificamos a cor complementar a ela.
+
+Cores Análogas Relacionadas:
+Escolhemos duas cores análogas, depois pula uma terceira cor, e pega a quarta cor (em qualquer direção)
+
+Cores Intercaladas:
+Similar as cores análogas, escolhemos uma cor, e depois pulamos uma cor e pegamos a terceira. Pulamos mais uma cor e pegamos a quinta.
+
+Cores Triádicas:
+Pegamos 3 cores equidistantes no circulo
+
+Cores em quadrado:
+Similar a Triádica, porém utilizamos 4 cores
+
+Cores Tetrádicas:
+Similar ao quadrado, porém escolhemos 2 cores análogas, e utilizando a técnica "cores complementar", pegamos as 2 cores opostas a elas.
+
+Monocromia:
+Utilizamos apenas uma cor, alterando apenas a saturação e o brilho dela.
+
+Configurações global das CSS: 
+* {}
+
+Tipografia:
+Configuração das Fontes:
+font-family: Qual a fonte do texto
+
+font-size: Pode ser indicado de diversas formas, mas a mais usual é por px. Você pode representar por "em", onde existe um tamanho padrão de fonte, e ao invés de toda hora colocar vários tamanhos, você só faz referência ao tamanho padrão: "1.5em", "1.2em"
+
+font-style: Italic, normal, oblique
+
+font-weight: negritos (lighter,normal,bold,bolder) ou (100-900)
+
+font-width: Largura
+
+font-height: Altura
+
+Uma forma de colocar tudo na mesma linha, é utilizando o comando "font:" e adicionando as informações na seguinte ordem: (shorthand)
+-font-style
+-font-variant
+-font-weight
+-font-size
+-font-family
+
+Segue exemplo abaixo:
+
+p {
+   font: italic bold 1em Arial, Helvetica, sans-serif;
+}
+
+Alinhamento de texto:
+
+Utilizamos o comando "text-align:" e completamos com:
+
+left: texto para esquerda
+right: texto para direita
+center: texto centralizado
+justify: texto distribuido
+
+Utilizando Fontes:
+Podemos utilizar as fontes, tanto pegando diretamente da internet ou baixando elas. 
+Para pegar diretamente da internet, podemos utilizar o Google Fonts, e pegar o "@import" da fonte, e colocar diretamente no nosso código, na aba <head><style> @import.....</style></head>
+
+Se for baixar, basta colocar o arquivo já "deszipado" dentro da pasta do código, e incluir no seu código na tag <style>, exemplo:
+
+@font-face {
+            font-family: ;
+            src: url('love larry.ttf') format('truetype');
+}
+
+
+Tipos de Format():
+- Opentype (otf)
+- Truetype (ttf)
+- embedded-opentype
+- truetype-aat (Apple Advanced Typography)
+- svg
+
+Fontes em Imagens:
+-Whatfontis.com (recomendado)
+-fontsquirrel.com
+-myfonts.com
+
+ID e Class:
+
+ID - "#"
+Class - "."
+Pseudo-Class - ":" (Estado de algum elemento)
+Pseudo-Element - "::"
+
+Utilizamos um ID para uma única variável. 
+Utilizamos uma Class para várias variáveis.
+Podemos adicionar 2 class em uma mesma variável, basta colocar as duas classes dentro e separar apenas por um espaço, exemplo:
+<p class="avancado intermediario"> 
+
+Hover:
+Criar um efeito que quando passa o mouse por cima do elemento ele muda para o que você programou.
+
+"Filho":
+Para criar um filho, basta colocar a "mãe" > "filho", exemplo:
+div > p {}
+
+Simbolos:
+
+https://erikasarti.com/html/dingbats-simbolos-desenhos/
+
+<Div>: Box Level (Quebra Linha)
+Exemplos:
+<h1>-<h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+<Span>: Inline Level (Não quebra linha)
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup>-<sub>
+<label>
+<button>
+<input>
+<select>
+
+"user agent" significa que o navegador que está exibindo o seu conteúdo
+
+Projetando um site:
+Primeiro, fazemos um esboço de como queremos o site, depois no código separamos as áreas, dentro do body:
+Header
+Nav
+Main
+Article
+Picture
+Divs
+Aside
+Footer
+
+Podendo colocar um dentro do outro, sem problemas nenhum.. 
+Após isso criamos o arquivo CSS, e definimos as cores e fontes do site, como exemplo abaixo:
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+Após isso, definimos os títulos e parágrafos, e iamos distribuindo pelo site, sem nenhuma edição prévia. Ajuda muito para dar corpo ao site.
+
+Feito a parte do HTML, focamos bem na parte de CSS. 
+Para isso, já instala o "Server Live" no IDLE, e abre a aplicação por ele, ele fica atualizando em tempo real o que está sendo alterado no código.
+
+Abaixo, vou colocar coisas novas que utilizamos, fora o que já aprendi anteriormente:
+
+-Inspecionar
+
+Abra o seu site ou qualquer outro domínio, clique com o botão direito > inspecionar. Ele abrirá o código fonte do seu site. 
+Clicando em um título, por exemplo, você abrirá todas as configurações que você fez nele; tamanho, forma, se é negrito / itálico.. Essas coisas.. E lá mesmo, clicando 2 vezes sobre qualquer parâmetro, você consegue alterar, e ver na própria página. É muito útil para pequenas modificações, onde não precisa ficar retornando a todo momento para o código. 
+
+-Margens
+
+Para definir as margens de um site, colocamos os comandos dentro da aba *, como o exemplo abaixo:
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+Neste exemplo acima, nosso site, fica por inteiro, sem margens nas bordas
+
+-Posicionamento de vídeo
+
+Como já vimos anteriormente, para colocar um vídeo no nosso código, basta irmos no YouTube e pegar o código e apenas colar, mas o problema é para posicionar ele. Para isso, colocamos o "iframe" dentro de uma div, e como o exemplo abaixo mostra, fazemos uma certa "gambiarra" para o vídeo ficar responsivo:
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+-Comando "00A0": Adiciona um espaço
+
+-Espaçamento de Texto: Comando "line-height" para espaçamento vertical
+
+-Edição de Listas:
+
+Para deixar as listas para dentro de um bloco: comando "list-style-position: inside;"
+Para definir quantas colunas terão: comando "columns:"
+
+-Tempo de Transição de algum comando:
+Comando: "Transition-duration: 1s;"
+Útil para quando for fazer algum botão, que quando você passa o mouse, ele muda de cor.. Para a cor não voltar de uma vez e ser algo mais "suave"
+
+
