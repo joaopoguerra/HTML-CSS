@@ -498,4 +498,48 @@ Para definir quantas colunas terão: comando "columns:"
 Comando: "Transition-duration: 1s;"
 Útil para quando for fazer algum botão, que quando você passa o mouse, ele muda de cor.. Para a cor não voltar de uma vez e ser algo mais "suave"
 
+Como criar um repositório no GitHub:
+Dentro do GitHub > File > Create a New Repository
 
+Name: Nome da Pasta
+Description: Descrição do Projeto
+Local Path: Local aonde está a pasta
+
+Selecionar: "Initialize this repository with a README"
+
+Git ignore: None
+License: MIT License
+
+Clique em "Create Repository"
+
+Neste momento, criou o repositório LOCAL. Para criar o repositório remoto, basta clicar em "Publish Repository" na página inicial
+
+Imagem de Fundo
+Para adicionar uma imagem de fundo, basta aplicar um background-image, e colocar o local da imagem, exemplo:
+
+body {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+        }
+
+Se a imagem for menor do que a caixa que está sendo aplicada, ele irá se repetir automaticamente, mas caso queira controlar, use o comando "background-repeat" com as seguintes respostas:
+
+repeat: Repete a imagem por toda a caixa
+no-repeat: Só aplica uma vez a imagem
+repeat-x: Só repete no eixo x
+repeat-y: Só repete no eixo y
+
+Posição da imagem:
+Utilizar o comando "background-position" com as respostas:
+left top, center top, right top, left center, center center, right center, left bottom, center bottom, right bottom
+
+Shorthand da imagem de fundo:
+
+Ao invés de colocar diversas linhas, podemos utilizar o Shorthand do background, que devemos apresentar as respostas nesta ordem:
+background-color
+background-image
+background-position
+background-repeat
+background-attachment
+
+Exemplo:
+background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;

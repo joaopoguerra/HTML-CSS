@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+        h2 {
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.7em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .retangulo {
+            display: inline-block;
+            background-color: lightgray;
+            height: 400px;
+            width: 90%;
+            border: 1px solid black;
+        }
+
+        #q1 {
+            background-image: url('imagens/pattern001.png');
+        }
+
+        #q2 {
+            background-image: url('imagens/pattern002.png');
+            background-repeat: repeat-x;
+        }
+
+        #q3 {
+            background-image: url('imagens/pattern003.png');
+            background-repeat: repeat-y;
+        }
+
+        #q4 {
+            background-image: url('imagens/pattern004.png');
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div class="retangulo" id="q1"></div>
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal</p>
+    <div class="retangulo" id="q2"></div>
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div class="retangulo" id="q3"></div>
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div class="retangulo" id="q4"></div>
+
+</body>
+</html>
