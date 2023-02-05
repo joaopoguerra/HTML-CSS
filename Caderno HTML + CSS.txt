@@ -543,3 +543,13 @@ background-attachment
 
 Exemplo:
 background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+
+Para utilizar fonte com todas as letras com formato de maiúscula, mas só as primeiras maiores:
+comando: font-variant: small-caps;
+
+iframe:
+Utilizado para adicionar outras páginas dentro da nossa, exemplo do comando:
+
+<iframe style="width: 500px; height: 500px;"src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+
+</iframe>

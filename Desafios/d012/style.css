@@ -14,23 +14,27 @@
     margin: 0px;
     padding: 0px;
 }
+
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
-    font-size: 16px;
     padding: 50px 0px 50px 0px;
-    margin-bottom: 50px;
 }
 
 header p {
     font-family: Verdana;
     text-align: center;
+    font-size: 16px;
 }
 
 header a {
     font-family: var(--fonte-padrao);
     font-size: 16px;
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
     text-decoration: none;
 }
@@ -41,48 +45,47 @@ header a:hover {
 
 header h1 {
     font-family: var(--fonte-titulo);
-    font-size: 136px;
+    font-size: 10vw;
     text-align: center;
+    font-variant: small-caps;
 }
 
-.textocordel {
-    width: 40%;
-}
-
-main p {
+section {
     font-family: var(--fonte-cordel);
-    font-size: 47px;
-    line-height: 95.6px;
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
-div#wallpaper01 {
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
     background-image: url('imagens/background001.jpg');
-    height: 100vh;
-    padding: 0px;
-    margin: 0px;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
+    background-position: right center;
 }
 
-div#wallpaper02 {
+section#img02 {
     background-image: url('imagens/background002.jpg');
-    position: relative;
-    height: 100vh;
-    padding: 0px;
-    margin: 0px;
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: right center;
 }
 
-div.textonafoto {
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.219);
+section.imagem {
+    background-color: rgba(49, 49, 49, 0.397);
     color: white;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    height: 100vh;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.521);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
@@ -91,7 +94,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 0.8em;
-    padding: 5px;
+    padding: 10px;
 }
 
 footer a {
