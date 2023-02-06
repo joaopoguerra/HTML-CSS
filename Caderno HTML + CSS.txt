@@ -592,3 +592,4 @@ Para esconder a scrollbar / barra de navegação:
             width: 0px;
             height: 0px;
 }
+
