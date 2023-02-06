@@ -571,3 +571,24 @@ sandbox="sandbox"
 referrerpolicy="no-referrer"
 
 Para liberar algumas coisas, pode abrir o comando do sandbox e referrerpolicy, que terá algumas opções, como liberar scripts
+
+Para deixar algum bloco/imagem no centro da página:
+
+main {
+    position: relative;
+    height: 100vh;
+    background-color: lightgreen;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }	
+
+Para esconder a scrollbar / barra de navegação:
+::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+}
