@@ -645,5 +645,50 @@ Input type="file": Importar uma foto. Neste caso, é muito importante trocar o "
 <label for="ifoto">Foto do Perfil: </label>
 <input type="file" name="foto" id="ifoto">
 
+comando "select": Cria uma caixa de escolha com os ítens pre-estabelecidos. Para colocar cada opção, utilizamos o comando "option", dentro dele colocamos o "value" que será a forma que será enviado para o banco de dados.
+
+comando "optgroup": Faz um agrupamento de opções dentro da caixa de seleção. 
+
+Exemplo Caixa de Seleção:
+
+<p>
+<label for="iest">Estado: </label>
+<select name="estado" id="iest">
+
+<option value="" selected>--- Escolha ---</option>
+<optgroup label="Região Sudeste">
+<option value="SP">São Paulo</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="MG">Minas Gerais</option>
+</optgroup>
+
+<optgroup label="Região Nordeste">
+<option value="RN">Rio Grande do Norte</option>
+<option value="PE">Pernambuco</option>
+<option value="MA">Maranhão</option>
+</optgroup>
+</select>
+</p>
+
+comando "datalist": Cria uma lista, mas ao invés da caixa de seleção, aonde a lista já é pre-estabelecida, neste podemos escolher entre uma lista, ou simplesmente colocamos o valor que queremos. Exemplo:
+
+<p>
+<label for="iprof">Profissão</label>
+<input type="text" name="prof" id="iprof" list="lstprof">
+<datalist id="lstprof">
+<option value="ADM">Administrador</option>
+<option value="CONT">Contador</option>
+<option value="DEV">Desenvolvedor</option>
+<option value="PROF">Professor</option>
+</datalist>
+</p>
+
+comando "textarea": Cria uma área onde pode incluir texto a vontade. São estabelecidos as colunas e linhas dessa caixa, onde setamos pela variável "cols" e "rows". Para travar o tamanho, utilizar a variável "resize: none". Para limitar o tanto de caracteres que pode ser escrito, utilizamos a variável "maxlength=x" .
+Exemplo:
+
+<p>
+<label for="imsg">Mensagem: </label> <br>
+<textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+</p>
 
 
