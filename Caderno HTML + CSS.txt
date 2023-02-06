@@ -593,3 +593,57 @@ Para esconder a scrollbar / barra de navegação:
             height: 0px;
 }
 
+Formulário:
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+Sempre utilizar o comando "label" para poder indexar a caixa com o nome dela
+
+comando "get": Vai aparecer a pesquisa na URL
+Comando "post": Não vai aparecer a pesquisa na URL, mas ainda vai aparecer no html
+comando "required": Tornar o campo obrigatório
+comando "minlength" ou "maxlength": Tamanho mínimo ou máximo do campo
+comando "size": Tamanho do campo
+comando "placeholder": Nome dentro do campo, uma "dica" do que escrever
+comando "min" ou "max": Colocar o minimo e maximo que um campo aceita
+
+comando "step": Qual o "passo" que ele aceita. Exemplo:
+<input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
+
+No exemplo acima, ele aceita valores entre 0 e 10, com passo de 0.1
+
+comando "value": O campo já começa com algum valor específico
+
+RegEx -> Estudar sobre (Expressões Regulares) Exemplo:
+pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+
+Comando "Fieldset": Agrupa todos os campos
+Comando "Legend": Título do agrupamento de campos
+
+Input type="radio": Marcar uma das opções, exemplo: Sexo. Não esquecer de utilizar o mesmo "name" para as opções, assim, só poderá escolher entre uma delas. Segue exemplo abaixo:
+
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label><br>
+        <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
+    </fieldset>
+
+Input type="color": Escolher uma cor
+
+Input type="range": Escolher por meio de uma barra, o valor, a exemplo de uma barra de satisfação que vai do 1 ao 10. Lembrando de sempre escolher o valor mínimo e o máximo.Exemplo abaixo:
+
+<label for="inivel">Nível de Satisfação: </label>
+<input type="range" name="nivel" id="inivel" min="1" max="5">
+
+Input type="file": Importar uma foto. Neste caso, é muito importante trocar o "method" do form para "post", devido ao tamanho do arquivo, pois o get só suporta 3kb. Exemplo abaixo:
+
+<label for="ifoto">Foto do Perfil: </label>
+<input type="file" name="foto" id="ifoto">
+
+
+
