@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* Typical device BreakPoints 
+Pequenas Telas: Até 600px
+Celular: 600px até 768px
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+Grandes Telas: acima de 1200px */
+
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav > ul> li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
