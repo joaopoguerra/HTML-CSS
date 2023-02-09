@@ -706,3 +706,20 @@ Podemos fazer todas as configurações dentro de uma CSS, para isso utilizamos o
 @media screen and (orientation: landscape)
 @media screen and (orientation: portrait)
 
+Typical device BreakPoints 
+Pequenas Telas: Até 600px
+Celular: 600px até 768px
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+Grandes Telas: acima de 1200px
+
+Dentro dessa CSS, podemos colocar os diversos tamanhos que temos disponível, por uma convenção, as medidas acima são mais universais, pode ser colocado do tamanho que melhor agradar.
+Uma dica importante, é utilizar "IDs" para ir identificando cada porção no CSS, exemplo:
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+No exemplo acima, o tablet está "ligado", e todos os outros não vão aparecer.
